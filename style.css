@@ -1,0 +1,49 @@
+header {
+        text-align: center;
+        background: url("http://ezinearticlesbase.com/wp-content/uploads/2017/07/travel-022.jpg");
+        background-size: cover;
+        color: #FBEEE6;
+        margin-top: 0 auto;
+        
+    }
+body {
+            background: url("https://cdn.shopify.com/s/files/1/0662/0053/products/Europe-Maptrail-Artymaps_large.png?v=1457185867");
+            background-size: cover;
+            background-position: center;
+    }
+
+a {
+    color: #FBEEE6;
+    }
+h1 {
+    font-size: 70px;
+    }
+ul {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5)
+    }
+li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    }
+div {
+    max-width: 800px;
+    padding:20px;
+    margin: 0 auto;
+}
+ div{
+        background: white;
+        opacity: 0.7;
+        margin-bottom: 20px;
+    }
+
+@media (max-width: 500px) {
+      
+        h1 {
+            font-size: 36px;
+            }
+        li {
+            display: block;
+            padding: 5px;
+            }
+    }
