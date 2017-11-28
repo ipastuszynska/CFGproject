@@ -15,7 +15,7 @@ h1:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
-	background: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png");
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Flag_of_Spain_%28Civil%29_alternate_colours.svg/2000px-Flag_of_Spain_%28Civil%29_alternate_colours.svg.png");
 	opacity: 0.5;
   left: 0;
   top: 0;
