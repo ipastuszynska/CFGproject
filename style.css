@@ -1,0 +1,54 @@
+header {
+        text-align: center;
+        background: url("http://ezinearticlesbase.com/wp-content/uploads/2017/07/travel-022.jpg");
+        background-size: cover;
+        color: #FBEEE6;
+        margin-top: 0 auto;
+        
+    }
+body {
+            background: url("https://www.rentokil.com/blog/wp-content/uploads/2016/03/how-to-prevent-bed-bugs-when-travelling-v2.jpg");
+            background-size: cover;
+            background-position: center;
+    }
+
+a {
+    color: #FBEEE6;
+    }
+h1 {
+    font-size: 70px;
+    font-family: 'Gloria Hallelujah', cursive;
+    }
+ul {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5)
+    }
+li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    }
+#about, #contact, #travel {
+    max-width: 800px;
+    padding:20px;
+    margin: 0 auto;
+}
+ #about, #contact, #travel {
+        background: white;
+        margin-bottom: 20px;
+    }
+
+@media (max-width: 500px) {
+      
+        h1 {
+            font-size: 36px;
+            }
+        li {
+            display: block;
+            padding: 5px;
+            }
+    }
+
+#map {
+        height: 400px;
+        width: 100%;
+       }

@@ -15,7 +15,7 @@ h1:after {
 	content: "";
 	position: absolute;
 	z-index: -1;
-	background: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png");
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/2000px-Flag_of_Denmark.svg.png");
 	opacity: 0.5;
   left: 0;
   top: 0;
@@ -37,12 +37,9 @@ h2 {
 }
 .img-container {
 	border: 2px solid black;
-<<<<<<< HEAD
 	border-radius: 240px;
 	height: 240px;
 	width: 240px;
-=======
->>>>>>> a00ae94d26f9f57fd57e56e09ab860ba8b8534c0
 	display: inline-block;
 	overflow: hidden;
 	margin-bottom: 100px;
