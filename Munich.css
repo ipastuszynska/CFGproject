@@ -37,9 +37,6 @@ h2 {
 }
 .img-container {
 	border: 2px solid black;
-	border-radius: 200px;
-	height: 200px;
-	width: 200px;
 	display: inline-block;
 	overflow: hidden;
 	margin-bottom: 100px;
