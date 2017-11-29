@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <head>
 	<title>Adventure Europe</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
 </head>
+
 <body>
+	<header>
 	<h1>Adventure Europe</h1>
-	<ul id="nav">
-		<li><a href="#about">About</a></li>
-		<li><a href="#travel">Travel</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
+		<ul id="nav">
+			<li><a href="#about">About</a></li>
+			<li><a href="#travel">Travel</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
 <div id="about">
 	<h2>Welcome</h2>
 	<p>We are a passionate about discovering and sharing exciting European cities with our community. Follow our journey into a variety of different cities and check out our most popular recommendations for activities and eateries! Head over to our travel page to immerse yourself in European culture now... Happy traveling!</p>
 </div>
 
 <div id="travel">
-	<h2>Happy traveling</h2>
+
+	<h2>Happy Traveling</h2>
 	<p>Click on a pin and find out what's there to do and see!</p>
+	 <div id="map"></div>
+
+  </script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 43.5297, lng: 5.4474}
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+         center: {lat: 43.5297, lng: 5.4474}
+        });
+       new google.maps.Marker({
+          position: {lat: 43.5297, lng: 5.4474},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+
+       new google.maps.Marker({
+          position: {lat: 52.2297, lng: 21.0122},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat: 48.2082, lng: 16.3738},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat:55.6761, lng: 12.5683},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat: 48.1351, lng: 11.5820},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat: 52.3702, lng: 4.8952},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat: 40.6333, lng: 14.6029},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+       new google.maps.Marker({
+          position: {lat: 28.2916, lng: -16.6291},
+          map: map
+        }).addListener('click', function() { window.location = 'http://wikipedia.org'});
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEda0B7t_Y5zmdej7YdlyLM3qG3IODtNE&callback=initMap">
+    </script>
 </div>
 <div id="contact">
 	<h2>Get in touch</h2>
 	<p>Let us know what other cities you would like to see added to this page. Feel free to send your top 3 things to see and do</p>
+	<input type="email" placeholder="city suggestion">
+	<input type="submit">
 </div>
 </body>
