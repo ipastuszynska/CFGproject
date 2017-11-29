@@ -31,9 +31,8 @@ div {
     padding:20px;
     margin: 0 auto;
 }
- div{
+ #about, #contact, #travel {
         background: white;
-        opacity: 0.7;
         margin-bottom: 20px;
     }
 
@@ -50,5 +49,5 @@ div {
 
 #map {
         height: 400px;
-        width: 100%;
+        width: 90%;
        }
