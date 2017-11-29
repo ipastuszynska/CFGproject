@@ -47,3 +47,8 @@ div {
             padding: 5px;
             }
     }
+
+#map {
+        height: 400px;
+        width: 100%;
+       }

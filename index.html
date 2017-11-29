@@ -2,6 +2,10 @@
 <head>
 	<title>Adventure Europe</title>
 	<link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
@@ -21,6 +25,23 @@
 <div id="travel">
 	<h2>Happy Traveling</h2>
 	<p>Click on a pin and find out what's there to do and see!</p>
+	 <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEda0B7t_Y5zmdej7YdlyLM3qG3IODtNE&callback=initMap">
+    </script>
 </div>
 <div id="contact">
 	<h2>Get in touch</h2>
